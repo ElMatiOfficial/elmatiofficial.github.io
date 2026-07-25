@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sebastian Mateus — ML Engineer & AI Researcher</title>
-  <meta name="description" content="ML engineer with 8+ years shipping production AI systems, now focused on research: agent security & red-teaming, LLM evaluation, and mathematical reasoning." />
+  <meta name="description" content="ML engineer with 8+ years shipping production AI, now focused on research: agent security & red-teaming, LLM evaluation, and mathematical reasoning. Kaggle Competitions Expert, ranked 1,095 of 210,960." />
   <meta property="og:title" content="Sebastian Mateus — ML Engineer & AI Researcher" />
   <meta property="og:description" content="I build and break intelligent systems. Agent security, LLM evaluation, mathematical reasoning." />
   <meta property="og:type" content="website" />
@@ -18,12 +18,15 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Sebastian Mateus",
-    "jobTitle": "ML Engineer & AI Researcher",
+    "jobTitle": "Lead Machine Learning Engineer",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bucaramanga", "addressRegion": "Santander", "addressCountry": "CO" },
     "url": "https://elmatiofficial.github.io/",
+    "knowsLanguage": ["en", "es", "pt"],
     "sameAs": [
-      "https://github.com/ElMatiOfficial",
+      "https://www.kaggle.com/sebastianmateus",
       "https://www.linkedin.com/in/sebastianmateusperdomo/",
-      "https://www.kaggle.com/sebastianmateus"
+      "https://github.com/ElMatiOfficial",
+      "https://medium.com/@SebastianMateusP"
     ]
   }
   </script>
@@ -33,11 +36,16 @@
 <nav class="nav" id="nav">
   <a class="nav-logo" href="#top">sm<span class="accent">.</span></a>
   <div class="nav-links">
-    <a href="#research">Research</a>
-    <a href="#experience">Experience</a>
-    <a href="#competitions">Competitions</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact" class="nav-cta">Contact</a>
+    <a href="#research" data-i18n="nav.research">Research</a>
+    <a href="#experience" data-i18n="nav.experience">Experience</a>
+    <a href="#competitions" data-i18n="nav.competitions">Competitions</a>
+    <a href="#skills" data-i18n="nav.skills">Skills</a>
+    <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contact</a>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Language">
+      <button class="lang-btn on" data-lang="en" title="English">EN</button>
+      <button class="lang-btn" data-lang="es" title="Español">ES</button>
+      <button class="lang-btn" data-lang="pt" title="Português">PT</button>
+    </div>
   </div>
 </nav>
 
@@ -46,41 +54,34 @@
   <div class="hero-inner">
     <div class="hero-copy">
       <h1>Sebastian Mateus</h1>
-      <p class="hero-tagline">I <span class="accent">build</span> and <span class="accent-warm">break</span> intelligent systems.</p>
-      <p class="hero-body">
+      <p class="hero-tagline" data-i18n="hero.tagline">I <span class="accent">build</span> and <span class="warm">break</span> intelligent systems.</p>
+      <p class="hero-body" data-i18n="hero.body">
         ML engineer with <strong>8+ years</strong> shipping production AI, from calibrated credit risk
         models to agentic RAG platforms. These days the center of gravity is research:
         <strong>agent security and red teaming</strong>, <strong>LLM evaluation</strong>, and
         <strong>mathematical reasoning</strong>, mostly played out in the open through competitive ML.
-        Kaggle Expert. Top 3% in the ARC Prize 2025.
+        Kaggle Competitions Expert, ranked <strong>1,095 of 210,960</strong>.
       </p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#research">Read my research</a>
-        <a class="btn btn-ghost" href="#experience">Career</a>
+        <a class="btn btn-primary" href="#research" data-i18n="hero.cta1">Read my research</a>
+        <a class="btn btn-ghost" href="#experience" data-i18n="hero.cta2">Career</a>
       </div>
       <div class="hero-links">
         <a href="https://www.kaggle.com/sebastianmateus" target="_blank" rel="noopener">Kaggle</a>
         <a href="https://www.linkedin.com/in/sebastianmateusperdomo/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/ElMatiOfficial" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://medium.com/@SebastianMateusP" target="_blank" rel="noopener">Medium</a>
       </div>
     </div>
 
-    <!-- Animated system diagram: build (cyan) & break (warm) -->
+    <!-- Animated system diagram: build (teal) & break (warm) -->
     <div class="hero-diagram" aria-hidden="true">
       <svg viewBox="0 0 645 430" xmlns="http://www.w3.org/2000/svg" class="diagram-svg">
-        <defs>
-          <linearGradient id="wire" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0" stop-color="#2a3348"/><stop offset="1" stop-color="#3b465f"/>
-          </linearGradient>
-        </defs>
+        <text x="40"  y="24" class="col-label" data-i18n="dg.task">TASK</text>
+        <text x="205" y="24" class="col-label" data-i18n="dg.orch">ORCHESTRATION</text>
+        <text x="392" y="24" class="col-label" data-i18n="dg.agents">AGENTS</text>
+        <text x="500" y="24" class="col-label" data-i18n="dg.out">OUTPUTS</text>
 
-        <!-- column labels -->
-        <text x="40"  y="24" class="col-label">TASK</text>
-        <text x="205" y="24" class="col-label">ORCHESTRATION</text>
-        <text x="392" y="24" class="col-label">AGENTS</text>
-        <text x="500" y="24" class="col-label">OUTPUTS</text>
-
-        <!-- wires -->
         <path id="w1" d="M118 120 C 160 120 160 150 196 150" class="wire"/>
         <path id="w2" d="M118 260 C 160 260 160 218 196 218" class="wire"/>
         <path id="w3" d="M304 150 C 340 150 340 82  372 82"  class="wire"/>
@@ -92,56 +93,51 @@
         <path id="w9" d="M472 242 C 496 242 496 240 508 240" class="wire wire-warm"/>
         <path id="w10" d="M472 322 C 500 322 500 300 508 300" class="wire"/>
 
-        <!-- input nodes -->
         <g class="node">
           <rect x="20" y="96" width="98" height="48" rx="9"/>
-          <text x="69" y="116" class="node-title" text-anchor="middle">Query</text>
-          <text x="69" y="131" class="node-sub" text-anchor="middle">multi-modal</text>
+          <text x="69" y="116" class="node-title" text-anchor="middle" data-i18n="dg.query">Query</text>
+          <text x="69" y="131" class="node-sub" text-anchor="middle" data-i18n="dg.querySub">multi-modal</text>
         </g>
         <g class="node">
           <rect x="20" y="236" width="98" height="48" rx="9"/>
-          <text x="69" y="256" class="node-title" text-anchor="middle">Adversary</text>
+          <text x="69" y="256" class="node-title" text-anchor="middle" data-i18n="dg.adv">Adversary</text>
           <text x="69" y="271" class="node-sub" text-anchor="middle">attack.py</text>
         </g>
 
-        <!-- orchestrator -->
         <g class="node node-core">
           <rect x="196" y="126" width="108" height="110" rx="11"/>
-          <text x="250" y="158" class="node-title" text-anchor="middle">Orchestrator</text>
-          <text x="250" y="175" class="node-sub" text-anchor="middle">graph router</text>
-          <text x="250" y="196" class="node-sub" text-anchor="middle">memory · state</text>
-          <text x="250" y="212" class="node-sub" text-anchor="middle">guardrails</text>
+          <text x="250" y="158" class="node-title" text-anchor="middle" data-i18n="dg.orchN">Orchestrator</text>
+          <text x="250" y="175" class="node-sub" text-anchor="middle" data-i18n="dg.orchS1">graph router</text>
+          <text x="250" y="196" class="node-sub" text-anchor="middle" data-i18n="dg.orchS2">memory · state</text>
+          <text x="250" y="212" class="node-sub" text-anchor="middle" data-i18n="dg.orchS3">guardrails</text>
         </g>
 
-        <!-- agents -->
         <g class="node">
           <rect x="372" y="58" width="100" height="48" rx="9"/>
           <text x="422" y="78" class="node-title" text-anchor="middle">RAG</text>
-          <text x="422" y="93" class="node-sub" text-anchor="middle">hybrid · rerank</text>
+          <text x="422" y="93" class="node-sub" text-anchor="middle" data-i18n="dg.ragSub">hybrid · rerank</text>
         </g>
         <g class="node">
           <rect x="372" y="138" width="100" height="48" rx="9"/>
-          <text x="422" y="158" class="node-title" text-anchor="middle">Reasoning</text>
-          <text x="422" y="173" class="node-sub" text-anchor="middle">EML · search</text>
+          <text x="422" y="158" class="node-title" text-anchor="middle" data-i18n="dg.reason">Reasoning</text>
+          <text x="422" y="173" class="node-sub" text-anchor="middle" data-i18n="dg.reasonSub">EML · search</text>
         </g>
         <g class="node node-warm">
           <rect x="372" y="218" width="100" height="48" rx="9"/>
-          <text x="422" y="238" class="node-title" text-anchor="middle">Red team</text>
-          <text x="422" y="253" class="node-sub" text-anchor="middle">multi-step</text>
+          <text x="422" y="238" class="node-title" text-anchor="middle" data-i18n="dg.red">Red team</text>
+          <text x="422" y="253" class="node-sub" text-anchor="middle" data-i18n="dg.redSub">multi-step</text>
         </g>
         <g class="node">
           <rect x="372" y="298" width="100" height="48" rx="9"/>
-          <text x="422" y="318" class="node-title" text-anchor="middle">Eval harness</text>
+          <text x="422" y="318" class="node-title" text-anchor="middle" data-i18n="dg.eval">Eval harness</text>
           <text x="422" y="333" class="node-sub" text-anchor="middle">LLM-as-judge</text>
         </g>
 
-        <!-- outputs -->
-        <g class="out"><circle cx="514" cy="120" r="5"/><text x="528" y="124" class="out-label">answers · cited</text></g>
-        <g class="out"><circle cx="514" cy="180" r="5"/><text x="528" y="184" class="out-label">proofs</text></g>
-        <g class="out out-warm"><circle cx="514" cy="240" r="5"/><text x="528" y="244" class="out-label">exploits</text></g>
-        <g class="out"><circle cx="514" cy="300" r="5"/><text x="528" y="304" class="out-label">eval reports</text></g>
+        <g class="out"><circle cx="514" cy="120" r="5"/><text x="528" y="124" class="out-label" data-i18n="dg.o1">answers · cited</text></g>
+        <g class="out"><circle cx="514" cy="180" r="5"/><text x="528" y="184" class="out-label" data-i18n="dg.o2">proofs</text></g>
+        <g class="out out-warm"><circle cx="514" cy="240" r="5"/><text x="528" y="244" class="out-label" data-i18n="dg.o3">exploits</text></g>
+        <g class="out"><circle cx="514" cy="300" r="5"/><text x="528" y="304" class="out-label" data-i18n="dg.o4">eval reports</text></g>
 
-        <!-- animated pulses -->
         <g class="pulses">
           <circle r="3.2" class="pulse"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
           <circle r="3.2" class="pulse pulse-warm"><animateMotion dur="3.1s" begin="0.6s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
@@ -155,16 +151,16 @@
           <circle r="3" class="pulse"><animateMotion dur="2.8s" begin="2.2s" repeatCount="indefinite"><mpath href="#w10"/></animateMotion></circle>
         </g>
       </svg>
-      <p class="diagram-caption">build <span class="cap-cyan">●</span> &nbsp;/&nbsp; break <span class="cap-warm">●</span> · the loop I work in</p>
+      <p class="diagram-caption" data-i18n="dg.caption">build <span class="cap-teal">●</span> &nbsp;/&nbsp; break <span class="cap-warm">●</span> · the loop I work in</p>
     </div>
   </div>
 
   <!-- stats -->
   <div class="stats reveal">
-    <div class="stat"><span class="stat-num" data-count="8" data-suffix="+">0</span><span class="stat-label">Years shipping ML systems</span></div>
-    <div class="stat"><span class="stat-num" data-count="18" data-suffix="">0</span><span class="stat-label">Kaggle competitions · 1 silver · 8 in the top 20%</span></div>
-    <div class="stat"><span class="stat-num" data-count="3" data-prefix="top " data-suffix="%">top 0%</span><span class="stat-label">ARC Prize 2025 · team lead</span></div>
-    <div class="stat"><span class="stat-num" data-count="13" data-suffix="">0</span><span class="stat-label">Engineers on the team I founded</span></div>
+    <div class="stat"><span class="stat-num" data-count="1095" data-format="comma">0</span><span class="stat-label" data-i18n="stat.rank">Kaggle global rank, of 210,960</span></div>
+    <div class="stat"><span class="stat-num" data-count="25" data-suffix="">0</span><span class="stat-label" data-i18n="stat.comps">Competitions entered · 6 running now</span></div>
+    <div class="stat"><span class="stat-num" data-count="8" data-suffix="">0</span><span class="stat-label" data-i18n="stat.top">Top 20% finishes · best 81st of 1,899</span></div>
+    <div class="stat"><span class="stat-num" data-count="13" data-suffix="">0</span><span class="stat-label" data-i18n="stat.team">Engineers on the team I founded</span></div>
   </div>
 </header>
 
@@ -175,21 +171,21 @@
   <div class="about-grid reveal">
     <div class="about-copy">
       <p class="section-kicker">WHOAMI</p>
-      <h2>Engineer by trade,<br/>researcher by trajectory.</h2>
-      <p>
+      <h2 data-i18n="about.h">Engineer by trade,<br/>researcher by trajectory.</h2>
+      <p data-i18n="about.p1">
         I spent eight years learning how ML systems fail in production (drift, silent data bugs,
         ungrounded generations) and building the pipelines, evals, and observability that catch it.
         That engineering discipline is now my research method: every open question I work on gets a
         documented brief, a scoring model analysis, an experiment ledger, and a reproducible pipeline.
       </p>
-      <p>
+      <p data-i18n="about.p2">
         Today that method points at the questions I find hardest and most consequential:
         <strong>how agentic systems break</strong> (red teaming, multi-step tool attacks),
         <strong>how to measure them honestly</strong> (LLM-as-judge, offline evals wired into CI), and
         <strong>how they reason</strong> (single-primitive normal forms for mathematics, program induction).
         Most of it plays out on Kaggle, where the leaderboard keeps me honest.
       </p>
-      <p class="about-extra">
+      <p class="about-extra" data-i18n="about.p3">
         Also: <a href="https://www.youtube.com/watch?v=RivKU85N9gw" target="_blank" rel="noopener">TEDx speaker</a> on AI,
         international hackathon winner (Baubap ML Hackathon, 1st place), trilingual
         (ES · EN · PT), and mentor to 13+ engineers.
@@ -199,14 +195,14 @@
       <div class="code-bar"><span></span><span></span><span></span><em>about.py</em></div>
       <pre><code><span class="c-kw">class</span> <span class="c-cls">SebastianMateus</span>:
     role      = <span class="c-str">"ML Engineer → AI Researcher"</span>
-    base      = <span class="c-str">"Colombia · remote (UTC-5)"</span>
+    base      = <span class="c-str">"Bucaramanga, CO · remote (UTC-5)"</span>
     research  = [<span class="c-str">"agent security"</span>, <span class="c-str">"LLM evaluation"</span>,
                  <span class="c-str">"mathematical reasoning"</span>]
     stack     = [<span class="c-str">"Python"</span>, <span class="c-str">"PyTorch"</span>, <span class="c-str">"LangGraph"</span>, <span class="c-str">"SQL"</span>,
                  <span class="c-str">"dbt"</span>, <span class="c-str">"BigQuery"</span>, <span class="c-str">"Docker"</span>, <span class="c-str">"Terraform"</span>]
     published = {<span class="c-str">"pypi"</span>: <span class="c-str">"eml-translator"</span>}
     languages = [<span class="c-str">"es"</span>, <span class="c-str">"en"</span>, <span class="c-str">"pt"</span>]
-    kaggle    = <span class="c-str">"Expert · 1 silver · 8 top-20%"</span>
+    kaggle    = <span class="c-str">"Expert · rank 1095 / 210960"</span>
     ships     = <span class="c-kw">True</span></code></pre>
     </div>
   </div>
@@ -214,93 +210,95 @@
 
 <!-- ================= RESEARCH ================= -->
 <section class="section" id="research">
-  <p class="section-kicker reveal">RESEARCH</p>
-  <h2 class="reveal">What I'm investigating</h2>
-  <p class="section-lede reveal">
+  <p class="section-kicker reveal" data-i18n="k.research">RESEARCH</p>
+  <h2 class="reveal" data-i18n="res.h">What I'm investigating</h2>
+  <p class="section-lede reveal" data-i18n="res.lede">
     Independent research run like production engineering: every line of work below has a public
     artifact, a reproducible pipeline, and an experiment ledger behind it.
   </p>
 
   <div class="research-grid">
     <article class="r-card r-warm reveal">
-      <div class="r-top"><span class="r-venue">AGENT SECURITY · OPENAI × GOOGLE × IEEE</span><span class="r-badge r-badge-live">ACTIVE</span></div>
-      <h3>Multi-step tool attacks on LLM agents</h3>
-      <p>
+      <div class="r-top"><span class="r-venue">AGENT SECURITY · OPENAI × GOOGLE × IEEE</span><span class="r-badge r-badge-live" data-i18n="badge.active">ACTIVE</span></div>
+      <h3 data-i18n="res.c1.h">Multi-step tool attacks on LLM agents</h3>
+      <p data-i18n="res.c1.p">
         Algorithmic red teaming: writing attack algorithms that surface reproducible multi-step failures
         in tool-using agents (GPT-OSS, Gemma) under public and private guardrails, inside a deterministic,
         replay-validated sandbox. Built a free-tier evaluation harness that estimates true per-model scores
         without spending scarce submissions, separating <em>learning</em> from <em>scoring</em>.
       </p>
-      <div class="r-tags"><span>red-teaming</span><span>agent safety</span><span>tool use</span><span>evaluation</span></div>
-      <a class="r-link" href="https://www.kaggle.com/competitions/ai-agent-security-multi-step-tool-attacks" target="_blank" rel="noopener">Competition ↗</a>
+      <div class="r-tags"><span data-i18n="t.redteam">red teaming</span><span data-i18n="t.agentsafety">agent safety</span><span data-i18n="t.tooluse">tool use</span><span data-i18n="t.eval">evaluation</span></div>
+      <a class="r-link" href="https://www.kaggle.com/competitions/ai-agent-security-multi-step-tool-attacks" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
     </article>
 
     <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">MATHEMATICAL REASONING · ARXIV:2603.21852</span><span class="r-badge">PYPI PACKAGE</span></div>
-      <h3>Single-primitive math for AI: the EML operator</h3>
-      <p>
+      <div class="r-top"><span class="r-venue">ABSTRACT REASONING · ARC PRIZE</span><span class="r-badge r-badge-live" data-i18n="badge.active">ACTIVE</span></div>
+      <h3 data-i18n="res.c2.h">Program induction at the frontier</h3>
+      <p data-i18n="res.c2.p">
+        ARC is the benchmark built to resist memorization: novel reasoning from a handful of examples.
+        Finished <strong>175th of 1,455</strong> in ARC Prize 2025 while leading the competitive ML team
+        I founded at Factored, and I'm currently entered in both ARC-AGI-2 and ARC-AGI-3 for the 2026 prize.
+      </p>
+      <div class="r-tags"><span>ARC-AGI</span><span data-i18n="t.progsynth">program synthesis</span><span data-i18n="t.fewshot">few-shot reasoning</span></div>
+      <a class="r-link" href="https://www.kaggle.com/competitions/arc-prize-2025" target="_blank" rel="noopener">ARC Prize 2025 ↗</a>
+      <a class="r-link" href="https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2" target="_blank" rel="noopener">ARC Prize 2026 ↗</a>
+    </article>
+
+    <article class="r-card reveal">
+      <div class="r-top"><span class="r-venue">MATHEMATICAL REASONING · ARXIV:2603.21852</span><span class="r-badge" data-i18n="badge.pypi">PYPI PACKAGE</span></div>
+      <h3 data-i18n="res.c3.h">Single-primitive math for AI: the EML operator</h3>
+      <p data-i18n="res.c3.p">
         Independent Python implementation of Odrzywołek's exp-minus-log primitive, the NAND gate of
         continuous mathematics, published on PyPI as <code>eml-translator</code>. On top of it, an agent
         research POC: a 21-problem benchmark (100% solved), seven EML tools exposed via Claude's tool-use
         API, and an 8-subagent A/B investigation of four Riemann-Hypothesis-equivalent criteria.
       </p>
-      <div class="r-tags"><span>symbolic math</span><span>tool-use agents</span><span>benchmarks</span></div>
+      <div class="r-tags"><span data-i18n="t.symbolic">symbolic math</span><span data-i18n="t.toolagents">tool-use agents</span><span data-i18n="t.bench">benchmarks</span></div>
       <a class="r-link" href="https://pypi.org/project/eml-translator/" target="_blank" rel="noopener">PyPI ↗</a>
-      <a class="r-link" href="https://github.com/ElMatiOfficial/EML-Research-POC" target="_blank" rel="noopener">Research repo ↗</a>
+      <a class="r-link" href="https://github.com/ElMatiOfficial/EML-Research-POC" target="_blank" rel="noopener" data-i18n="link.repo">Research repo ↗</a>
     </article>
 
     <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">ABSTRACT REASONING · ARC PRIZE 2025</span><span class="r-badge r-badge-gold">TOP 3%</span></div>
-      <h3>Program induction at the frontier</h3>
-      <p>
-        Led Factored's competitive ML team to the top 3% of the ARC Prize 2025, the few-shot abstraction
-        benchmark built to resist memorization. Founded that team and grew it from 1 to 13 engineers in
-        ten months, with top 20% finishes in all five international challenges entered.
+      <div class="r-top"><span class="r-venue">SCIENTIFIC ML · IMAGE FORENSICS</span><span class="r-badge r-badge-gold" data-i18n="badge.top8">TOP 8%</span></div>
+      <h3 data-i18n="res.c4.h">Detecting forgery in biomedical research images</h3>
+      <p data-i18n="res.c4.p">
+        Copy-move forgery detection and segmentation in scientific figures, a direct attack on research
+        fraud. Finished <strong>128th of 1,564</strong> teams in the Recod.ai/LUC challenge. Related
+        scientific ML work includes exoplanet signal recovery (NeurIPS Ariel Data Challenge, 184/860)
+        and ECG digitization from paper printouts (PhysioNet, 250/1,424).
       </p>
-      <div class="r-tags"><span>ARC</span><span>program synthesis</span><span>team leadership</span></div>
-      <a class="r-link" href="https://www.kaggle.com/competitions/arc-prize-2025" target="_blank" rel="noopener">ARC Prize ↗</a>
+      <div class="r-tags"><span data-i18n="t.cv">computer vision</span><span data-i18n="t.segm">segmentation</span><span data-i18n="t.integrity">research integrity</span></div>
+      <a class="r-link" href="https://www.kaggle.com/competitions/recodai-luc-scientific-image-forgery-detection" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
     </article>
 
     <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">SCIENTIFIC ML · CZ BIOHUB</span><span class="r-badge r-badge-live">ACTIVE</span></div>
-      <h3>Tracking every cell in a developing embryo</h3>
-      <p>
+      <div class="r-top"><span class="r-venue">BIOLOGICAL ML · CZ BIOHUB</span><span class="r-badge r-badge-live" data-i18n="badge.active">ACTIVE</span></div>
+      <h3 data-i18n="res.c5.h">Tracking every cell in a developing embryo</h3>
+      <p data-i18n="res.c5.p">
         Detection and tracking of zebrafish embryo cells through 3D space and time. Reverse-engineered the
         official metric into an offline scorer that runs without images, enabling fast local iteration;
         current focus is cell division detection, the largest unclaimed scoring lever.
       </p>
-      <div class="r-tags"><span>computer vision</span><span>3D tracking</span><span>developmental bio</span></div>
-      <a class="r-link" href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development" target="_blank" rel="noopener">Competition ↗</a>
+      <div class="r-tags"><span data-i18n="t.cv">computer vision</span><span data-i18n="t.tracking">3D tracking</span><span data-i18n="t.devbio">developmental biology</span></div>
+      <a class="r-link" href="https://www.kaggle.com/competitions/biohub-cell-tracking-during-development" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
     </article>
 
     <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">GAME AGENTS · POKÉMON TCG AI BATTLE</span><span class="r-badge r-badge-live">ACTIVE</span></div>
-      <h3>Search policies for imperfect-information games</h3>
-      <p>
-        Building ladder agents for a stochastic, imperfect-information card game: controlled challenger
-        experiments over a probabilistic baseline, a repaired search-API rollout path, deterministic
-        packaging, and an evidence-backed strategy writeup as the final deliverable.
+      <div class="r-top"><span class="r-venue">SEQUENCE MODELING · NFL BIG DATA BOWL</span><span class="r-badge r-badge-gold" data-i18n="badge.top5">TOP 5%</span></div>
+      <h3 data-i18n="res.c6.h">Predicting player movement in flight</h3>
+      <p data-i18n="res.c6.p">
+        Forecasting where every player moves while the ball is in the air: multi-agent trajectory
+        prediction under physical constraints. My strongest public finish, <strong>81st of 1,899</strong>
+        teams, in the NFL's flagship analytics competition.
       </p>
-      <div class="r-tags"><span>game AI</span><span>search · UCB</span><span>ablations</span></div>
-      <a class="r-link" href="https://www.kaggle.com/competitions/pokemon-tcg-ai-battle" target="_blank" rel="noopener">Competition ↗</a>
-    </article>
-
-    <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">GEOSCIENCE ML · ROGII</span><span class="r-badge r-badge-live">ACTIVE</span></div>
-      <h3>Particle filters for wellbore geosteering</h3>
-      <p>
-        Sequential Monte Carlo alignment of horizontal-well gamma-ray logs against type wells to predict
-        hidden stratigraphy. Characterized rerun variance of the public metric and maintain an experiment
-        ledger tracking every submission against medal cutoffs.
-      </p>
-      <div class="r-tags"><span>Bayesian filtering</span><span>time series</span><span>geoscience</span></div>
-      <a class="r-link" href="https://www.kaggle.com/competitions/rogii-wellbore-geology-prediction" target="_blank" rel="noopener">Competition ↗</a>
+      <div class="r-tags"><span data-i18n="t.traj">trajectory prediction</span><span data-i18n="t.spatio">spatiotemporal</span><span data-i18n="t.multiagent">multi-agent</span></div>
+      <a class="r-link" href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-prediction" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
     </article>
   </div>
 
   <div class="method-note reveal">
-    <span class="method-label">METHOD</span>
-    <p>
+    <span class="method-label" data-i18n="method.label">METHOD</span>
+    <p data-i18n="method.p">
       Every project above is run as a research program, not a leaderboard sprint: a written competition
       brief, a first-principles analysis of the scoring model, baselines with provenance, an experiment
       ledger, and submission pipelines that never spend a run to <em>learn</em> what a free evaluation can tell me.
@@ -310,22 +308,22 @@
 
 <!-- ================= EXPERIENCE ================= -->
 <section class="section" id="experience">
-  <p class="section-kicker reveal">CAREER</p>
-  <h2 class="reveal">Professional experience</h2>
-  <p class="section-lede reveal">Eight years from analytics to production ML to leading teams: the engineering backbone behind the research.</p>
+  <p class="section-kicker reveal" data-i18n="k.career">CAREER</p>
+  <h2 class="reveal" data-i18n="exp.h">Professional experience</h2>
+  <p class="section-lede reveal" data-i18n="exp.lede">Eight years from analytics to production ML to leading teams: the engineering backbone behind the research.</p>
 
   <div class="timeline">
     <article class="t-item reveal">
-      <div class="t-meta"><span class="t-dates">Nov 2025 – Present</span></div>
+      <div class="t-meta"><span class="t-dates" data-i18n="d.vendoo">Nov 2025 – Present</span></div>
       <div class="t-body">
         <h3>Vendoo <span class="t-note">(YC W22) · USA, remote</span></h3>
-        <p class="t-role">Lead Data Scientist, Growth</p>
+        <p class="t-role" data-i18n="exp.vendoo.role">Lead Data Scientist, Growth</p>
         <ul>
-          <li>Own end-to-end monitoring and forecasting of growth KPIs (activation, trial conversion, churn, MRR) on BigQuery + dbt (100+ models); ensemble forecasts reaching <strong>97%+ accuracy</strong> on key metrics.</li>
-          <li>Led experimentation for the company-wide freemium→free-trial pricing transition: A/B design, cohort-adjusted churn analysis, and MRR/ROI projections that informed the rollout decision.</li>
-          <li>Built the growth measurement stack (server-side GTM, Meta CAPI, Braze CDI pipelines) and prototyped an <strong>LLM-powered analytics agent</strong> (Claude API) for natural-language access to metrics.</li>
+          <li data-i18n="exp.vendoo.b1">Own end-to-end monitoring and forecasting of growth KPIs (activation, trial conversion, churn, MRR) on BigQuery + dbt (100+ models); ensemble forecasts reaching <strong>97%+ accuracy</strong> on key metrics.</li>
+          <li data-i18n="exp.vendoo.b2">Led experimentation for the company-wide freemium→free-trial pricing transition: A/B design, cohort-adjusted churn analysis, and MRR/ROI projections that informed the rollout decision.</li>
+          <li data-i18n="exp.vendoo.b3">Built the growth measurement stack (server-side GTM, Meta CAPI, Braze CDI pipelines) and prototyped an <strong>LLM-powered analytics agent</strong> (Claude API) for natural-language access to metrics.</li>
         </ul>
-        <div class="t-tags"><span>BigQuery</span><span>dbt</span><span>experimentation</span><span>forecasting</span><span>Claude API</span></div>
+        <div class="t-tags"><span>BigQuery</span><span>dbt</span><span data-i18n="t.experimentation">experimentation</span><span data-i18n="t.forecasting">forecasting</span><span>Claude API</span></div>
       </div>
     </article>
 
@@ -333,12 +331,12 @@
       <div class="t-meta"><span class="t-dates">Jan 2025 – Jan 2026</span></div>
       <div class="t-body">
         <h3>Factored <span class="t-note">· Palo Alto, remote</span></h3>
-        <p class="t-role">Competitive ML Team Lead &amp; Founder</p>
+        <p class="t-role" data-i18n="exp.fact1.role">Competitive ML Team Lead &amp; Founder</p>
         <ul>
-          <li>Founded the competitive-ML practice and grew it <strong>1 → 13 engineers in 10 months</strong>.</li>
-          <li>Five international challenges entered, <strong>top 20% in all</strong>; <strong>top 3% in the ARC Prize 2025</strong>.</li>
+          <li data-i18n="exp.fact1.b1">Founded the competitive ML practice and grew it <strong>1 → 13 engineers in 10 months</strong>.</li>
+          <li data-i18n="exp.fact1.b2">Five international challenges entered, <strong>top 20% in all</strong>, spanning abstract reasoning, scientific imaging, and forecasting.</li>
         </ul>
-        <div class="t-tags"><span>leadership</span><span>ARC Prize</span><span>competitive ML</span></div>
+        <div class="t-tags"><span data-i18n="t.leadership">leadership</span><span>ARC Prize</span><span data-i18n="t.compml">competitive ML</span></div>
       </div>
     </article>
 
@@ -346,14 +344,14 @@
       <div class="t-meta"><span class="t-dates">Jun 2024 – Jan 2026</span></div>
       <div class="t-body">
         <h3>Factored <span class="t-note">· Palo Alto, remote</span></h3>
-        <p class="t-role">Machine Learning Engineer (L2 → L3)</p>
+        <p class="t-role" data-i18n="exp.fact2.role">Machine Learning Engineer (L2 → L3)</p>
         <ul>
-          <li>Architected a high-scale ingestion platform (Dockerized Scrapy + AWS Batch + event-driven Lambdas) normalizing hundreds of sources into a universal schema, cutting ingestion time <strong>40%</strong>.</li>
-          <li>Built the MLOps pipeline for a GenAI city-guide product: hybrid RAG (dense + BM25) with cross-encoder reranking, <strong>LLM-as-judge evaluation</strong> (faithfulness, Recall@5), and Terraform for 100% dev/prod parity.</li>
-          <li>Implemented data/concept drift detection with CloudWatch + Langfuse tracing (latency, token cost, error rates); <strong>+15% Precision@5</strong> via champion–challenger retraining cycles.</li>
-          <li>Shipped recommender systems for user-behavior modeling and GenAI content generation at scale.</li>
+          <li data-i18n="exp.fact2.b1">Architected a high-scale ingestion platform (Dockerized Scrapy + AWS Batch + event-driven Lambdas) normalizing hundreds of sources into a universal schema, cutting ingestion time <strong>40%</strong>.</li>
+          <li data-i18n="exp.fact2.b2">Built the MLOps pipeline for a GenAI city-guide product: hybrid RAG (dense + BM25) with cross-encoder reranking, <strong>LLM-as-judge evaluation</strong> (faithfulness, Recall@5), and Terraform for 100% dev/prod parity.</li>
+          <li data-i18n="exp.fact2.b3">Implemented data/concept drift detection with CloudWatch + Langfuse tracing (latency, token cost, error rates); <strong>+15% Precision@5</strong> via champion–challenger retraining cycles.</li>
+          <li data-i18n="exp.fact2.b4">Shipped recommender systems for user-behavior modeling and GenAI content generation at scale.</li>
         </ul>
-        <div class="t-tags"><span>RAG</span><span>LangChain</span><span>Langfuse</span><span>AWS</span><span>Terraform</span><span>recommenders</span></div>
+        <div class="t-tags"><span>RAG</span><span>LangChain</span><span>Langfuse</span><span>AWS</span><span>Terraform</span><span data-i18n="t.recsys">recommenders</span></div>
       </div>
     </article>
 
@@ -361,24 +359,24 @@
       <div class="t-meta"><span class="t-dates">Jul 2023 – Apr 2024</span></div>
       <div class="t-body">
         <h3>Intouch CX <span class="t-note">· Winnipeg, remote</span></h3>
-        <p class="t-role">Senior Data Scientist</p>
+        <p class="t-role" data-i18n="exp.intouch.role">Senior Data Scientist</p>
         <ul>
-          <li>Applied transformer/NLP models (classification, embeddings) over large raw datasets to drive stakeholder decisions; led demand-prediction projects behind workforce planning.</li>
+          <li data-i18n="exp.intouch.b1">Applied transformer/NLP models (classification, embeddings) over large raw datasets to drive stakeholder decisions; led demand-prediction projects behind workforce planning.</li>
         </ul>
-        <div class="t-tags"><span>NLP</span><span>transformers</span><span>forecasting</span></div>
+        <div class="t-tags"><span>NLP</span><span>transformers</span><span data-i18n="t.forecasting">forecasting</span></div>
       </div>
     </article>
 
     <article class="t-item t-compact reveal">
       <div class="t-meta"><span class="t-dates">2018 – 2023</span></div>
       <div class="t-body">
-        <h3>Earlier roles <span class="t-note">· Robin Food, Immersion Design, Vision Puntual (co-founder), Metric Analytics</span></h3>
+        <h3 data-i18n="exp.early.h">Earlier roles <span class="t-note">· Robin Food, Immersion Design, Vision Puntual (co-founder), Metric Analytics</span></h3>
         <ul>
-          <li>NLP pipeline classifying <strong>10K customer comments/month</strong>; clustering of <strong>~1M customers</strong> powering personalized retention (Robin Food).</li>
-          <li>Co-founded a data science practice: churn prediction, dynamic pricing, and CV-based defect detection for retail (Vision Puntual).</li>
-          <li>Stock-market behavior models managing portfolios of millions of COP; led a data science team (Metric Analytics).</li>
+          <li data-i18n="exp.early.b1">NLP pipeline classifying <strong>10K customer comments/month</strong>; clustering of <strong>~1M customers</strong> powering personalized retention (Robin Food).</li>
+          <li data-i18n="exp.early.b2">Co-founded a data science practice: churn prediction, dynamic pricing, and CV-based defect detection for retail (Vision Puntual).</li>
+          <li data-i18n="exp.early.b3">Stock-market behavior models managing portfolios of millions of COP; led a data science team (Metric Analytics).</li>
         </ul>
-        <div class="t-tags"><span>NLP</span><span>clustering</span><span>pricing</span><span>team lead</span></div>
+        <div class="t-tags"><span>NLP</span><span data-i18n="t.clustering">clustering</span><span data-i18n="t.pricing">pricing</span><span data-i18n="t.teamlead">team lead</span></div>
       </div>
     </article>
   </div>
@@ -386,70 +384,106 @@
 
 <!-- ================= COMPETITIONS ================= -->
 <section class="section" id="competitions">
-  <p class="section-kicker reveal">COMPETITIVE ML</p>
-  <h2 class="reveal">The leaderboard record</h2>
-  <p class="section-lede reveal">
+  <p class="section-kicker reveal" data-i18n="k.compml">COMPETITIVE ML</p>
+  <h2 class="reveal" data-i18n="comp.h">The leaderboard record</h2>
+  <p class="section-lede reveal" data-i18n="comp.lede">
     Competition is my favorite forcing function: a frozen metric, a hard deadline, and no partial
-    credit for good intentions.
+    credit for good intentions. Twenty-five entered, six running right now.
   </p>
 
-  <div class="proj-grid">
+  <div class="board reveal">
+    <div class="board-head">
+      <span data-i18n="board.comp">Competition</span><span data-i18n="board.domain">Domain</span><span data-i18n="board.result">Result</span>
+    </div>
+    <a class="board-row" href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-prediction" target="_blank" rel="noopener">
+      <span class="b-name">NFL Big Data Bowl 2026</span><span class="b-dom" data-i18n="t.traj">trajectory prediction</span><span class="b-res b-strong">81 / 1,899</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/recodai-luc-scientific-image-forgery-detection" target="_blank" rel="noopener">
+      <span class="b-name">Recod.ai/LUC Image Forgery</span><span class="b-dom" data-i18n="t.forensics">image forensics</span><span class="b-res b-strong">128 / 1,564</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/csiro-biomass" target="_blank" rel="noopener">
+      <span class="b-name">CSIRO Image2Biomass</span><span class="b-dom" data-i18n="t.cv">computer vision</span><span class="b-res b-strong">389 / 3,805</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/arc-prize-2025" target="_blank" rel="noopener">
+      <span class="b-name">ARC Prize 2025</span><span class="b-dom" data-i18n="t.absreason">abstract reasoning</span><span class="b-res">175 / 1,455</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/deep-past-initiative-machine-translation" target="_blank" rel="noopener">
+      <span class="b-name" data-i18n="board.akkadian">Deep Past: Akkadian → English</span><span class="b-dom" data-i18n="t.mt">machine translation</span><span class="b-res">404 / 2,674</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/physionet-ecg-image-digitization" target="_blank" rel="noopener">
+      <span class="b-name">PhysioNet ECG Digitization</span><span class="b-dom" data-i18n="t.medimg">medical imaging</span><span class="b-res">250 / 1,424</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/ariel-data-challenge-2025" target="_blank" rel="noopener">
+      <span class="b-name">NeurIPS Ariel Data Challenge</span><span class="b-dom" data-i18n="t.astro">astrophysics</span><span class="b-res">184 / 860</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/santa-2025" target="_blank" rel="noopener">
+      <span class="b-name">Santa 2025 Packing</span><span class="b-dom" data-i18n="t.opt">optimization</span><span class="b-res">508 / 3,357</span>
+    </a>
+    <a class="board-row" href="https://www.kaggle.com/competitions/orbit-wars" target="_blank" rel="noopener">
+      <span class="b-name">Orbit Wars</span><span class="b-dom" data-i18n="t.rtsagents">real-time strategy agents</span><span class="b-res">811 / 4,729</span>
+    </a>
+    <a class="board-row board-more" href="https://www.kaggle.com/sebastianmateus/competitions" target="_blank" rel="noopener">
+      <span class="b-name" data-i18n="board.more">Full record on Kaggle</span><span class="b-dom" data-i18n="board.moreDom">25 competitions</span><span class="b-res">↗</span>
+    </a>
+  </div>
+
+  <div class="proj-grid comp-extra">
     <a class="p-card reveal" href="https://www.kaggle.com/sebastianmateus" target="_blank" rel="noopener">
-      <h3>Kaggle Expert <span>↗</span></h3>
-      <p>18 competitions entered: 1 silver medal and 8 top 20% finishes across tabular, NLP, vision, and simulation tracks. Write-ups and final notebooks published for every finished run.</p>
-      <div class="p-tags"><span>1 silver</span><span>8 × top 20%</span><span>18 entered</span></div>
-    </a>
-    <a class="p-card reveal" href="https://www.kaggle.com/competitions/arc-prize-2025" target="_blank" rel="noopener">
-      <h3>ARC Prize 2025 <span>↗</span></h3>
-      <p>Top 3% worldwide on the abstraction benchmark built to resist memorization, leading the competitive ML team I founded at Factored, 13 engineers strong.</p>
-      <div class="p-tags"><span>top 3%</span><span>team lead</span></div>
-    </a>
-    <a class="p-card reveal" href="#research">
-      <h3>4 live competitions <span>→</span></h3>
-      <p>Agent security, embryo cell tracking, wellbore geosteering, and game agents, each run with a written brief, an offline scorer, and an experiment ledger.</p>
-      <div class="p-tags"><span>active now</span><span>research grade</span></div>
+      <h3 data-i18n="comp.c1.h">Competitions Expert <span>↗</span></h3>
+      <p data-i18n="comp.c1.p">Ranked <strong>1,095 of 210,960</strong> Kaggle competitors, with a silver and a bronze medal. Twenty-five competitions entered across tabular, vision, NLP, audio, optimization, and simulation tracks.</p>
+      <div class="p-tags"><span data-i18n="tag.silver">1 silver</span><span data-i18n="tag.bronze">1 bronze</span><span data-i18n="tag.top05">top 0.5%</span></div>
     </a>
     <div class="p-card reveal">
-      <h3>Baubap AI Hackathon · 1st place</h3>
-      <p>Won the neural networks category of the Mexican fintech's international hackathon in CDMX: fraud detection over 1K+ tabular features at 90%+ accuracy.</p>
-      <div class="p-tags"><span>CDMX 2023</span><span>fraud detection</span></div>
+      <h3 data-i18n="comp.c2.h">Six live competitions</h3>
+      <p data-i18n="comp.c2.p">Agent security, embryo cell tracking, wellbore geosteering, Pokémon TCG battle agents, and both ARC-AGI-2 and ARC-AGI-3, each run with a written brief, an offline scorer, and an experiment ledger.</p>
+      <div class="p-tags"><span data-i18n="tag.active">active now</span><span data-i18n="tag.research">research grade</span></div>
     </div>
+    <div class="p-card reveal">
+      <h3 data-i18n="comp.c3.h">Baubap AI Hackathon · 1st place</h3>
+      <p data-i18n="comp.c3.p">Won the neural networks category of the Mexican fintech's international hackathon in CDMX: fraud detection over 1K+ tabular features at 90%+ accuracy.</p>
+      <div class="p-tags"><span>CDMX 2023</span><span data-i18n="t.fraud">fraud detection</span></div>
+    </div>
+    <a class="p-card reveal" href="https://medium.com/@SebastianMateusP" target="_blank" rel="noopener">
+      <h3 data-i18n="comp.c4.h">Writing <span>↗</span></h3>
+      <p data-i18n="comp.c4.p">I write about data science, AI, and the scientific method on Medium, and I gave a TEDx talk on how AI reshapes the way we solve problems.</p>
+      <div class="p-tags"><span>Medium</span><span>TEDx</span><span data-i18n="tag.trilingual">ES · EN · PT</span></div>
+    </a>
   </div>
 </section>
 
 <!-- ================= SKILLS ================= -->
 <section class="section" id="skills">
-  <p class="section-kicker reveal">TOOLKIT</p>
-  <h2 class="reveal">Technical depth by domain</h2>
+  <p class="section-kicker reveal" data-i18n="k.toolkit">TOOLKIT</p>
+  <h2 class="reveal" data-i18n="skills.h">Technical depth by domain</h2>
 
   <div class="skills-grid">
     <div class="s-card reveal">
       <h3>AI / GenAI</h3>
       <div class="s-tags">
-        <span>LLM systems</span><span>RAG</span><span>agentic workflows</span><span>MCP</span>
+        <span>LLM systems</span><span>RAG</span><span data-i18n="t.agentwf">agentic workflows</span><span>MCP</span>
         <span>LangChain / LangGraph</span><span>LLM-as-judge</span><span>Langfuse</span>
-        <span>prompt engineering</span><span>recommenders</span><span>NLP</span><span>PyTorch</span><span>scikit-learn</span>
+        <span data-i18n="t.prompt">prompt engineering</span><span data-i18n="t.recsys">recommenders</span><span>NLP</span><span>PyTorch</span><span>scikit-learn</span>
       </div>
     </div>
     <div class="s-card reveal">
-      <h3>MLOps &amp; Infrastructure</h3>
+      <h3 data-i18n="skills.infra">MLOps &amp; Infrastructure</h3>
       <div class="s-tags">
         <span>MLflow</span><span>Vertex AI</span><span>SageMaker</span><span>Databricks</span>
-        <span>drift detection</span><span>champion–challenger</span><span>Docker</span>
+        <span data-i18n="t.drift">drift detection</span><span>champion–challenger</span><span>Docker</span>
         <span>Terraform</span><span>AWS · GCP · Azure</span><span>CI/CD</span>
       </div>
     </div>
     <div class="s-card reveal">
-      <h3>Data Engineering</h3>
+      <h3 data-i18n="skills.data">Data Engineering</h3>
       <div class="s-tags">
         <span>BigQuery</span><span>dbt</span><span>Airflow</span><span>Spark / PySpark</span>
-        <span>Delta Lake</span><span>Scrapy</span><span>ETL / ELT design</span><span>PostgreSQL · MongoDB</span>
+        <span>Delta Lake</span><span>Scrapy</span><span data-i18n="t.etl">ETL / ELT design</span><span>PostgreSQL · MongoDB</span>
       </div>
     </div>
     <div class="s-card reveal">
-      <h3>Programming</h3>
+      <h3 data-i18n="skills.prog">Programming</h3>
       <div class="s-tags">
-        <span>Python (expert)</span><span>SQL (expert)</span><span>Scala</span><span>R</span>
+        <span data-i18n="t.pyexp">Python (expert)</span><span data-i18n="t.sqlexp">SQL (expert)</span><span>Scala</span><span>R</span>
         <span>FastAPI</span><span>pytest</span><span>Linux / Bash</span><span>Git</span>
       </div>
     </div>
@@ -458,28 +492,30 @@
 
 <!-- ================= CONTACT ================= -->
 <section class="section contact" id="contact">
-  <p class="section-kicker reveal">CONTACT</p>
-  <h2 class="reveal">Let's talk about hard problems.</h2>
-  <p class="section-lede reveal">
+  <p class="section-kicker reveal" data-i18n="k.contact">CONTACT</p>
+  <h2 class="reveal" data-i18n="contact.h">Let's talk about hard problems.</h2>
+  <p class="section-lede reveal" data-i18n="contact.lede">
     If you're building (or breaking) intelligent systems and want to compare notes,
     the fastest way to reach me is LinkedIn.
   </p>
   <div class="contact-actions reveal">
-    <a class="btn btn-primary" href="https://www.linkedin.com/in/sebastianmateusperdomo/" target="_blank" rel="noopener">Message me on LinkedIn</a>
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/sebastianmateusperdomo/" target="_blank" rel="noopener" data-i18n="contact.btn">Message me on LinkedIn</a>
   </div>
   <div class="hero-links contact-links reveal">
     <a href="https://www.kaggle.com/sebastianmateus" target="_blank" rel="noopener">Kaggle</a>
     <a href="https://github.com/ElMatiOfficial" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://www.youtube.com/watch?v=RivKU85N9gw" target="_blank" rel="noopener">TEDx&nbsp;talk</a>
+    <a href="https://medium.com/@SebastianMateusP" target="_blank" rel="noopener">Medium</a>
+    <a href="https://www.youtube.com/watch?v=RivKU85N9gw" target="_blank" rel="noopener" data-i18n="link.tedx">TEDx&nbsp;talk</a>
   </div>
 </section>
 
 </main>
 
 <footer class="footer">
-  <p>© 2026 Sebastian Mateus · designed &amp; built by hand · no frameworks, like the good old days</p>
+  <p data-i18n="footer">© 2026 Sebastian Mateus · designed &amp; built by hand · no frameworks, like the good old days</p>
 </footer>
 
+<script src="i18n.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
