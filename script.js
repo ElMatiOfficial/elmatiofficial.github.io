@@ -41,15 +41,15 @@ const statsIo = new IntersectionObserver((entries) => {
 const stats = document.querySelector(".stats");
 if (stats) statsIo.observe(stats);
 
-// temporary palette preview picker (remove before publishing)
-const picker = document.getElementById("themePicker");
+// temporary font preview picker (remove before publishing)
+const picker = document.getElementById("fontPicker");
 if (picker) {
   picker.addEventListener("click", (ev) => {
-    const dot = ev.target.closest(".tp-dot");
-    if (!dot) return;
-    const t = dot.dataset.t;
-    if (t) document.documentElement.dataset.theme = t;
-    else delete document.documentElement.dataset.theme;
-    picker.querySelectorAll(".tp-dot").forEach((d) => d.classList.toggle("on", d === dot));
+    const btn = ev.target.closest(".fp-btn");
+    if (!btn) return;
+    const f = btn.dataset.f;
+    if (f) document.documentElement.dataset.font = f;
+    else delete document.documentElement.dataset.font;
+    picker.querySelectorAll(".fp-btn").forEach((b) => b.classList.toggle("on", b === btn));
   });
 }
