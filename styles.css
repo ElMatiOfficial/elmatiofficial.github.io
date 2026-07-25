@@ -18,9 +18,8 @@
   --nav-bg: #faf9f5d9;
   --glow-a: #e8e2d030;
   --glow-b: #ded6e830;
-  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --display: var(--sans);
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --radius: 14px;
   --maxw: 1120px;
 }
@@ -47,7 +46,6 @@ main, header, nav, footer { position: relative; z-index: 1; }
 
 ::selection { background: var(--accent); color: var(--bg); }
 a { color: var(--accent); text-decoration: none; }
-h1, h2, .r-card h3, .t-body h3 { font-family: var(--display); }
 .accent { color: var(--accent); }
 .accent-warm { color: var(--warm); }
 strong { color: var(--text); font-weight: 600; }
@@ -93,7 +91,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 .hero h1 {
   font-size: clamp(40px, 6vw, 64px);
-  font-weight: 800; letter-spacing: -.03em; line-height: 1.05;
+  font-weight: 700; letter-spacing: -.02em; line-height: 1.05;
 }
 .hero-tagline {
   font-size: clamp(20px, 2.6vw, 27px);
@@ -244,7 +242,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 .r-badge-live { border-color: #9dd6b4; color: #15803d; background: #15803d0e; }
 .r-badge-gold { border-color: #dbc490; color: var(--gold); background: #a162070e; }
-.r-card h3 { font-size: 19px; font-weight: 650; letter-spacing: -.01em; margin-bottom: 10px; }
+.r-card h3 { font-size: 19px; font-weight: 600; letter-spacing: -.01em; margin-bottom: 10px; }
 .r-card p { color: var(--muted); font-size: 14.5px; margin-bottom: 16px; }
 .r-card code { font-family: var(--mono); font-size: 13px; color: var(--accent); }
 .r-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 14px; }
@@ -282,7 +280,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 .t-compact::before { border-color: var(--faint); }
 .t-dates { font-family: var(--mono); font-size: 12.5px; color: var(--faint); letter-spacing: .04em; }
-.t-body h3 { font-size: 19px; font-weight: 650; }
+.t-body h3 { font-size: 19px; font-weight: 600; }
 .t-note { font-size: 13.5px; font-weight: 400; color: var(--faint); }
 .t-role { font-family: var(--mono); font-size: 13px; color: var(--accent); margin: 3px 0 12px; }
 .t-body ul { list-style: none; margin-bottom: 14px; }
@@ -342,39 +340,6 @@ strong { color: var(--text); font-weight: 600; }
 @media (prefers-reduced-motion: reduce) {
   .reveal { opacity: 1; transform: none; transition: none; }
 }
-
-/* ============ alternate fonts (preview via font picker) ============ */
-html[data-font="journal"] {
-  --display: "Newsreader", Georgia, "Times New Roman", serif;
-}
-html[data-font="journal"] h1,
-html[data-font="journal"] h2 { letter-spacing: -.015em; font-weight: 600; }
-html[data-font="plex"] {
-  --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --display: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
-}
-html[data-font="grotesk"] {
-  --display: "Space Grotesk", "Inter", sans-serif;
-}
-
-/* font picker (temporary, remove before publishing) */
-.font-picker {
-  position: fixed; right: 18px; bottom: 18px; z-index: 60;
-  display: flex; align-items: center; gap: 6px;
-  background: var(--panel); border: 1px solid var(--line);
-  border-radius: 999px; padding: 7px 12px;
-  box-shadow: 0 10px 30px #00000022;
-}
-.fp-label { font-family: var(--mono); font-size: 11px; color: var(--faint); letter-spacing: .08em; margin-right: 4px; }
-.fp-btn {
-  font-size: 13px; color: var(--muted); cursor: pointer;
-  background: transparent; border: 1px solid transparent;
-  border-radius: 999px; padding: 4px 10px;
-  transition: color .15s ease, border-color .15s ease;
-}
-.fp-btn:hover { color: var(--text); }
-.fp-btn.on { color: var(--accent); border-color: var(--accent); }
 
 /* ============ responsive ============ */
 @media (max-width: 960px) {

@@ -40,16 +40,3 @@ const statsIo = new IntersectionObserver((entries) => {
 }, { threshold: 0.4 });
 const stats = document.querySelector(".stats");
 if (stats) statsIo.observe(stats);
-
-// temporary font preview picker (remove before publishing)
-const picker = document.getElementById("fontPicker");
-if (picker) {
-  picker.addEventListener("click", (ev) => {
-    const btn = ev.target.closest(".fp-btn");
-    if (!btn) return;
-    const f = btn.dataset.f;
-    if (f) document.documentElement.dataset.font = f;
-    else delete document.documentElement.dataset.font;
-    picker.querySelectorAll(".fp-btn").forEach((b) => b.classList.toggle("on", b === btn));
-  });
-}
