@@ -8,7 +8,7 @@ const I18N = {
     "nav.skills": "Habilidades",
     "nav.contact": "Contacto",
 
-    "hero.tagline": 'Construyo <span class="accent">y rompo</span> <span class="warm">sistemas inteligentes</span>.',
+    "hero.tagline": 'Yo <span class="accent">construyo</span> y <span class="warm">rompo</span> sistemas inteligentes.',
     "hero.body": "Ingeniero de ML con <strong>más de 8 años</strong> llevando IA a producción, desde modelos calibrados de riesgo crediticio hasta plataformas RAG con agentes. Hoy mi centro de gravedad es la investigación: <strong>seguridad de agentes y red teaming</strong>, <strong>evaluación de LLMs</strong> y <strong>razonamiento matemático</strong>, casi todo a la vista pública a través del ML competitivo. Kaggle Competitions Expert, puesto <strong>1.095 de 210.960</strong>.",
     "hero.cta1": "Ver mi investigación",
     "hero.cta2": "Trayectoria",
@@ -36,9 +36,9 @@ const I18N = {
     "dg.o4": "informes",
     "dg.caption": 'construir <span class="cap-teal">●</span> &nbsp;/&nbsp; romper <span class="cap-warm">●</span> · el ciclo en el que trabajo',
 
+    "stat.years": "Años llevando ML a producción",
     "stat.rank": "Puesto global en Kaggle, de 210.960",
-    "stat.comps": "Competencias · 6 activas ahora",
-    "stat.top": "Finales en el top 20% · mejor: 81 de 1.899",
+    "stat.comps": "Competencias · 2 medallas · 6 activas ahora",
     "stat.team": "Ingenieros en el equipo que fundé",
 
     "about.h": "Ingeniero de oficio,<br/>investigador por trayectoria.",
@@ -105,7 +105,7 @@ const I18N = {
     "board.more": "Historial completo en Kaggle",
     "board.moreDom": "25 competencias",
     "comp.c1.h": "Competitions Expert <span>↗</span>",
-    "comp.c1.p": "Puesto <strong>1.095 de 210.960</strong> competidores en Kaggle, con una medalla de plata y una de bronce. Veinticinco competencias disputadas en pistas tabulares, de visión, NLP, audio, optimización y simulación.",
+    "comp.c1.p": "Puesto <strong>1.095 de 210.960</strong> competidores en Kaggle, con una medalla de plata, una de bronce y ocho finales en el top 20%. Veinticinco competencias disputadas en pistas tabulares, de visión, NLP, audio, optimización y simulación.",
     "comp.c2.h": "Seis competencias activas",
     "comp.c2.p": "Seguridad de agentes, seguimiento de células embrionarias, geonavegación de pozos, agentes de batalla de Pokémon TCG y tanto ARC-AGI-2 como ARC-AGI-3, cada una con documento de contexto, evaluador offline y registro de experimentos.",
     "comp.c3.h": "Baubap AI Hackathon · 1er lugar",
@@ -178,9 +178,9 @@ const I18N = {
     "dg.o4": "relatórios",
     "dg.caption": 'construir <span class="cap-teal">●</span> &nbsp;/&nbsp; quebrar <span class="cap-warm">●</span> · o ciclo em que trabalho',
 
+    "stat.years": "Anos levando ML para produção",
     "stat.rank": "Posição global no Kaggle, de 210.960",
-    "stat.comps": "Competições · 6 ativas agora",
-    "stat.top": "Resultados no top 20% · melhor: 81 de 1.899",
+    "stat.comps": "Competições · 2 medalhas · 6 ativas agora",
     "stat.team": "Engenheiros na equipe que fundei",
 
     "about.h": "Engenheiro de ofício,<br/>pesquisador por trajetória.",
@@ -247,7 +247,7 @@ const I18N = {
     "board.more": "Histórico completo no Kaggle",
     "board.moreDom": "25 competições",
     "comp.c1.h": "Competitions Expert <span>↗</span>",
-    "comp.c1.p": "Posição <strong>1.095 de 210.960</strong> competidores do Kaggle, com uma medalha de prata e uma de bronze. Vinte e cinco competições disputadas em trilhas tabulares, de visão, NLP, áudio, otimização e simulação.",
+    "comp.c1.p": "Posição <strong>1.095 de 210.960</strong> competidores do Kaggle, com uma medalha de prata, uma de bronze e oito resultados no top 20%. Vinte e cinco competições disputadas em trilhas tabulares, de visão, NLP, áudio, otimização e simulação.",
     "comp.c2.h": "Seis competições ativas",
     "comp.c2.p": "Segurança de agentes, rastreamento de células embrionárias, geonavegação de poços, agentes de batalha de Pokémon TCG e tanto ARC-AGI-2 quanto ARC-AGI-3, cada uma com documento de contexto, avaliador offline e registro de experimentos.",
     "comp.c3.h": "Baubap AI Hackathon · 1º lugar",

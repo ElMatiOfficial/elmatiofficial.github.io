@@ -81,9 +81,9 @@ strong { color: var(--text); font-weight: 600; }
   border: 1px solid var(--line); border-radius: 8px; padding: 2px;
 }
 .lang-btn {
-  font-family: var(--mono); font-size: 11px; letter-spacing: .04em;
-  padding: 4px 8px; border-radius: 6px; border: none;
-  background: transparent; color: var(--muted); cursor: pointer;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  padding: 4px 8px; border: 0; background: transparent;
+  color: var(--faint); cursor: pointer; border-radius: 6px;
   transition: color .15s ease, background .15s ease;
 }
 .lang-btn:hover { color: var(--text); }
@@ -164,6 +164,7 @@ strong { color: var(--text); font-weight: 600; }
 }
 .cap-teal { color: var(--accent); }
 .cap-warm { color: var(--warm); }
+.warm { color: var(--warm); }
 
 /* stats */
 .stats {
