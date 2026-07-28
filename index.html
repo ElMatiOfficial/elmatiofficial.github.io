@@ -264,9 +264,10 @@
       <h3 data-i18n="res.c4.h">Detecting forgery in biomedical research images</h3>
       <p data-i18n="res.c4.p">
         Copy-move forgery detection and segmentation in scientific figures, a direct attack on research
-        fraud. Finished <strong>128th of 1,564</strong> teams in the Recod.ai/LUC challenge. Related
-        scientific ML work includes exoplanet signal recovery (NeurIPS Ariel Data Challenge, 184/860)
-        and ECG digitization from paper printouts (PhysioNet, 250/1,424).
+        fraud. Bronze medal, <strong>128th of 1,564</strong> teams in the Recod.ai/LUC challenge, working
+        from a public baseline I rebuilt around a different segmentation head. Related scientific ML work
+        includes exoplanet signal recovery (NeurIPS Ariel Data Challenge, 184/860) and ECG digitization
+        from paper printouts (PhysioNet, 250/1,424).
       </p>
       <div class="r-tags"><span data-i18n="t.cv">computer vision</span><span data-i18n="t.segm">segmentation</span><span data-i18n="t.integrity">research integrity</span></div>
       <a class="r-link" href="https://www.kaggle.com/competitions/recodai-luc-scientific-image-forgery-detection" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
@@ -285,15 +286,17 @@
     </article>
 
     <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">SEQUENCE MODELING · NFL BIG DATA BOWL</span><span class="r-badge r-badge-gold" data-i18n="badge.top5">TOP 5%</span></div>
-      <h3 data-i18n="res.c6.h">Predicting player movement in flight</h3>
+      <div class="r-top"><span class="r-venue">3D SEGMENTATION · VESUVIUS CHALLENGE</span><span class="r-badge" data-i18n="badge.own">OWN METHOD</span></div>
+      <h3 data-i18n="res.c6.h">Reading a scroll that cannot be unrolled</h3>
       <p data-i18n="res.c6.p">
-        Forecasting where every player moves while the ball is in the air: multi-agent trajectory
-        prediction under physical constraints. My strongest public finish, <strong>81st of 1,899</strong>
-        teams, in the NFL's flagship analytics competition.
+        Detecting papyrus surfaces inside CT scans of carbonized Herculaneum scrolls. I built a 3D
+        hysteresis fusion: high-confidence voxels seed morphological propagation inside a permissive
+        two-model union mask. Of everything I've submitted, this is the one whose <strong>private score
+        beat its public score</strong>, which is the only real evidence a method generalizes rather
+        than fits the leaderboard.
       </p>
-      <div class="r-tags"><span data-i18n="t.traj">trajectory prediction</span><span data-i18n="t.spatio">spatiotemporal</span><span data-i18n="t.multiagent">multi-agent</span></div>
-      <a class="r-link" href="https://www.kaggle.com/competitions/nfl-big-data-bowl-2026-prediction" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
+      <div class="r-tags"><span data-i18n="t.seg3d">3D segmentation</span><span data-i18n="t.morph">morphological propagation</span><span data-i18n="t.archaeo">archaeology</span></div>
+      <a class="r-link" href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
     </article>
   </div>
 
@@ -426,6 +429,42 @@
     <a class="board-row board-more" href="https://www.kaggle.com/sebastianmateus/competitions" target="_blank" rel="noopener">
       <span class="b-name" data-i18n="board.more">Full record on Kaggle</span><span class="b-dom" data-i18n="board.moreDom">25 competitions</span><span class="b-res">↗</span>
     </a>
+  </div>
+
+  <div class="methods reveal">
+    <div class="methods-head">
+      <h3 data-i18n="methods.h">Where the method is mine</h3>
+      <p data-i18n="methods.lede">
+        Running a strong public notebook is legal on Kaggle and teaches you very little. These are the
+        entries where the approach was my own, which is the only part of a leaderboard worth showing.
+      </p>
+    </div>
+    <ul class="methods-list">
+      <li>
+        <span class="m-name">Vesuvius Challenge</span>
+        <span class="m-desc" data-i18n="methods.m1">3D hysteresis mask fusion: confident voxels seed morphological propagation inside a two-model union mask. Private score beat public.</span>
+      </li>
+      <li>
+        <span class="m-name">NVIDIA Nemotron</span>
+        <span class="m-desc" data-i18n="methods.m2">Merged several LoRA adapters into a single rank-32 adapter with truncated SVD, the Eckart–Young optimal low-rank approximation.</span>
+      </li>
+      <li>
+        <span class="m-name">CAFA 6</span>
+        <span class="m-desc" data-i18n="methods.m3">Built the Gene Ontology DAG and applied topological max-propagation so predictions satisfy the true-path rule by construction.</span>
+      </li>
+      <li>
+        <span class="m-name">NeuroGolf 2026</span>
+        <span class="m-desc" data-i18n="methods.m4">400 hand-optimized per-task ONNX graphs, scoring 4,178 → 7,277 over three months of iteration.</span>
+      </li>
+      <li>
+        <span class="m-name">Santa 2025</span>
+        <span class="m-desc" data-i18n="methods.m5">STRtree-indexed parallel packing search, assembled from three credited public ideas into a faster combined solver.</span>
+      </li>
+    </ul>
+    <p class="methods-note" data-i18n="methods.note">
+      I keep a written provenance ledger for all 19 finished competitions, diffing every final
+      submission against public work so credit lands where it belongs. Happy to share it on request.
+    </p>
   </div>
 
   <div class="proj-grid comp-extra">
