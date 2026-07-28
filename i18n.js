@@ -12,6 +12,7 @@ const I18N = {
     "hero.body": "Ingeniero de ML con <strong>más de 8 años</strong> llevando IA a producción, desde modelos calibrados de riesgo crediticio hasta plataformas RAG con agentes. Hoy mi centro de gravedad es la investigación: <strong>seguridad de agentes y red teaming</strong>, <strong>evaluación de LLMs</strong> y <strong>razonamiento matemático</strong>, casi todo a la vista pública a través del ML competitivo. Kaggle Competitions Expert, puesto <strong>1.095 de 210.960</strong>.",
     "hero.cta1": "Ver mi investigación",
     "hero.cta2": "Trayectoria",
+    "hero.cv": "Descargar CV",
 
     "dg.task": "TAREA",
     "dg.orch": "ORQUESTACIÓN",
@@ -154,6 +155,7 @@ const I18N = {
     "hero.body": "Engenheiro de ML com <strong>mais de 8 anos</strong> levando IA para produção, de modelos calibrados de risco de crédito a plataformas RAG com agentes. Hoje meu centro de gravidade é a pesquisa: <strong>segurança de agentes e red teaming</strong>, <strong>avaliação de LLMs</strong> e <strong>raciocínio matemático</strong>, quase tudo em aberto por meio de ML competitivo. Kaggle Competitions Expert, posição <strong>1.095 de 210.960</strong>.",
     "hero.cta1": "Ver minha pesquisa",
     "hero.cta2": "Carreira",
+    "hero.cv": "Baixar CV",
 
     "dg.task": "TAREFA",
     "dg.orch": "ORQUESTRAÇÃO",
