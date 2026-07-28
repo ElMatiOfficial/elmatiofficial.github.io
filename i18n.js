@@ -112,7 +112,7 @@ const I18N = {
     "methods.m3": "Construí el DAG de Gene Ontology y apliqué max-propagación topológica para que las predicciones cumplan la regla del camino verdadero por construcción.",
     "methods.m4": "400 grafos ONNX optimizados a mano por tarea, pasando de 4.178 a 7.277 puntos en tres meses de iteración.",
     "methods.m5": "Búsqueda de empaquetado paralela indexada con STRtree, ensamblada a partir de tres ideas públicas acreditadas en un solucionador combinado más rápido.",
-    "methods.note": "Mantengo un registro escrito de procedencia para las 19 competencias terminadas, comparando cada envío final contra trabajo público para que el crédito quede donde corresponde. Con gusto lo comparto si me lo piden.",
+    "methods.note": "Cada uno enlaza a un informe técnico completo. Toda competencia que termino recibe uno, con el método tal como fue enviado y el crédito a cualquier trabajo público sobre el que se construyó.",
 
     "comp.c1.h": "Competitions Expert <span>↗</span>",
     "comp.c1.p": "Puesto <strong>1.095 de 210.960</strong> competidores en Kaggle, con una medalla de plata, una de bronce y ocho finales en el top 20%. Veinticinco competencias disputadas en pistas tabulares, de visión, NLP, audio, optimización y simulación.",
@@ -265,7 +265,7 @@ const I18N = {
     "methods.m3": "Construí o DAG da Gene Ontology e apliquei max-propagação topológica para que as previsões satisfaçam a regra do caminho verdadeiro por construção.",
     "methods.m4": "400 grafos ONNX otimizados à mão por tarefa, saindo de 4.178 para 7.277 pontos em três meses de iteração.",
     "methods.m5": "Busca de empacotamento paralela indexada por STRtree, montada a partir de três ideias públicas creditadas em um solver combinado mais rápido.",
-    "methods.note": "Mantenho um registro escrito de procedência para as 19 competições concluídas, comparando cada submissão final com trabalho público para que o crédito fique onde é devido. Compartilho com prazer se pedirem.",
+    "methods.note": "Cada um leva a um relatório técnico completo. Toda competição que concluo recebe um, com o método tal como foi submetido e crédito a qualquer trabalho público em que se apoiou.",
 
     "comp.c1.h": "Competitions Expert <span>↗</span>",
     "comp.c1.p": "Posição <strong>1.095 de 210.960</strong> competidores do Kaggle, com uma medalha de prata, uma de bronze e oito resultados no top 20%. Vinte e cinco competições disputadas em trilhas tabulares, de visão, NLP, áudio, otimização e simulação.",
