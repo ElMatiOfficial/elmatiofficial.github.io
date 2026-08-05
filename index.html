@@ -203,7 +203,7 @@
                  <span class="c-str">"mathematical reasoning"</span>]
     stack     = [<span class="c-str">"Python"</span>, <span class="c-str">"PyTorch"</span>, <span class="c-str">"LangGraph"</span>, <span class="c-str">"SQL"</span>,
                  <span class="c-str">"dbt"</span>, <span class="c-str">"BigQuery"</span>, <span class="c-str">"Docker"</span>, <span class="c-str">"Terraform"</span>]
-    published = {<span class="c-str">"pypi"</span>: <span class="c-str">"eml-translator"</span>}
+    oss       = [<span class="c-str">"eml-translator"</span>, <span class="c-str">"barrio-mapper"</span>, <span class="c-str">"realh"</span>]
     languages = [<span class="c-str">"es"</span>, <span class="c-str">"en"</span>, <span class="c-str">"pt"</span>]
     kaggle    = <span class="c-str">"Expert · rank 1095 / 210960"</span>
     ships     = <span class="c-kw">True</span></code></pre>
@@ -245,19 +245,22 @@
       <div class="r-tags"><span>ARC-AGI</span><span data-i18n="t.progsynth">program synthesis</span><span data-i18n="t.fewshot">few-shot reasoning</span></div>
       <a class="r-link" href="https://www.kaggle.com/competitions/arc-prize-2025" target="_blank" rel="noopener">ARC Prize 2025 ↗</a>
       <a class="r-link" href="https://www.kaggle.com/competitions/arc-prize-2026-arc-agi-2" target="_blank" rel="noopener">ARC Prize 2026 ↗</a>
+      <a class="r-link" href="https://github.com/ElMatiOfficial/kaggle-solutions/blob/main/writeups/03-arc-prize-2025.md" target="_blank" rel="noopener" data-i18n="link.writeup">Write-up ↗</a>
     </article>
 
     <article class="r-card reveal">
-      <div class="r-top"><span class="r-venue">MATHEMATICAL REASONING · ARXIV:2603.21852</span><span class="r-badge" data-i18n="badge.pypi">PYPI PACKAGE</span></div>
+      <div class="r-top"><span class="r-venue">MATHEMATICAL REASONING · ARXIV:2603.21852</span><span class="r-badge" data-i18n="badge.oss">OPEN SOURCE</span></div>
       <h3 data-i18n="res.c3.h">Single-primitive math for AI: the EML operator</h3>
       <p data-i18n="res.c3.p">
         Independent Python implementation of Odrzywołek's exp-minus-log primitive, the NAND gate of
-        continuous mathematics, published on PyPI as <code>eml-translator</code>. On top of it, an agent
+        continuous mathematics, released as the <code>eml-translator</code> library. On top of it, an agent
         research POC: a 21-problem benchmark (100% solved), seven EML tools exposed via Claude's tool-use
-        API, and an 8-subagent A/B investigation of four Riemann-Hypothesis-equivalent criteria.
+        API, and an 8-subagent A/B investigation of four Riemann-Hypothesis-equivalent criteria. The POC
+        also reports where the tools <em>don't</em> pay: on calculus and algebra the agents route around
+        EML to sympy.
       </p>
       <div class="r-tags"><span data-i18n="t.symbolic">symbolic math</span><span data-i18n="t.toolagents">tool-use agents</span><span data-i18n="t.bench">benchmarks</span></div>
-      <a class="r-link" href="https://pypi.org/project/eml-translator/" target="_blank" rel="noopener">PyPI ↗</a>
+      <a class="r-link" href="https://github.com/ElMatiOfficial/EML-Matemathical-Translator-for-AI" target="_blank" rel="noopener" data-i18n="link.lib">Library ↗</a>
       <a class="r-link" href="https://github.com/ElMatiOfficial/EML-Research-POC" target="_blank" rel="noopener" data-i18n="link.repo">Research repo ↗</a>
     </article>
 
@@ -273,6 +276,7 @@
       </p>
       <div class="r-tags"><span data-i18n="t.cv">computer vision</span><span data-i18n="t.segm">segmentation</span><span data-i18n="t.integrity">research integrity</span></div>
       <a class="r-link" href="https://www.kaggle.com/competitions/recodai-luc-scientific-image-forgery-detection" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
+      <a class="r-link" href="https://github.com/ElMatiOfficial/kaggle-solutions/blob/main/writeups/02-recodai-scientific-image-forgery.md" target="_blank" rel="noopener" data-i18n="link.writeup">Write-up ↗</a>
     </article>
 
     <article class="r-card reveal">
@@ -299,6 +303,7 @@
       </p>
       <div class="r-tags"><span data-i18n="t.seg3d">3D segmentation</span><span data-i18n="t.morph">morphological propagation</span><span data-i18n="t.archaeo">archaeology</span></div>
       <a class="r-link" href="https://www.kaggle.com/competitions/vesuvius-challenge-surface-detection" target="_blank" rel="noopener" data-i18n="link.comp">Competition ↗</a>
+      <a class="r-link" href="https://github.com/ElMatiOfficial/kaggle-solutions/blob/main/writeups/11-vesuvius-surface-detection.md" target="_blank" rel="noopener" data-i18n="link.writeup">Write-up ↗</a>
     </article>
   </div>
 
@@ -395,6 +400,15 @@
   <p class="section-lede reveal" data-i18n="comp.lede">
     Competition is my favorite forcing function: a frozen metric, a hard deadline, and no partial
     credit for good intentions. Twenty-five entered, six running right now.
+  </p>
+
+  <p class="board-note reveal" data-i18n="comp.provenance">
+    <strong>Read this before the numbers.</strong> Both medals came from public notebooks I ran, not
+    methods I invented — the silver was a verbatim copy, similarity 1.000. All 19 finished
+    competitions are classified in a
+    <a href="https://github.com/ElMatiOfficial/kaggle-solutions/blob/main/PROVENANCE.md" target="_blank" rel="noopener">public provenance ledger</a>:
+    5 substantially original, 5 derived, 6 verbatim copies, 3 teammate-authored, every upstream
+    author named. It was built by diffing my final submissions against the notebooks they came from.
   </p>
 
   <div class="board reveal">
