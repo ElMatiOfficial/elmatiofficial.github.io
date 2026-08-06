@@ -9,7 +9,7 @@ const I18N = {
     "nav.contact": "Contacto",
 
     "hero.tagline": 'Yo <span class="accent">construyo</span> y <span class="warm">rompo</span> sistemas inteligentes.',
-    "hero.body": "Ingeniero de ML con <strong>más de 8 años</strong> llevando IA a producción, actualmente Senior AI/ML Engineer en <strong>Nequi (Grupo Bancolombia)</strong>, donde preentreno modelos fundacionales sobre secuencias transaccionales de clientes. Fuera del horario, mi centro de gravedad es la investigación: <strong>seguridad de agentes y red teaming</strong>, <strong>evaluación de LLMs</strong> y <strong>razonamiento matemático</strong>, casi todo a la vista pública a través del ML competitivo. Kaggle Competitions Expert, puesto <strong>1.095 de 210.960</strong>.",
+    "hero.body": "Ingeniero de ML con <strong>más de 8 años</strong> llevando IA a producción, actualmente Senior AI/ML Engineer en <strong>Nequi (Grupo Bancolombia)</strong>, donde preentreno modelos fundacionales sobre secuencias transaccionales de clientes. Fuera del horario, mi centro de gravedad es la investigación: <strong>seguridad de agentes y red teaming</strong>, <strong>evaluación de LLMs</strong> y <strong>razonamiento matemático</strong>, casi todo a la vista pública a través del ML competitivo. Kaggle Competitions Expert, puesto <strong>1.094 de 209.674</strong>.",
     "hero.cta1": "Ver mi investigación",
     "hero.cta2": "Trayectoria",
     "hero.cv": "Descargar CV",
@@ -38,8 +38,8 @@ const I18N = {
     "dg.caption": 'construir <span class="cap-teal">●</span> &nbsp;/&nbsp; romper <span class="cap-warm">●</span> · el ciclo en el que trabajo',
 
     "stat.years": "Años llevando ML a producción",
-    "stat.rank": "Puesto global en Kaggle, de 210.960",
-    "stat.comps": "Competencias · 2 medallas · 6 activas ahora",
+    "stat.rank": "Puesto global en Kaggle, de 209.674",
+    "stat.comps": "Competencias · 3 medallas · 7 activas ahora",
     "stat.team": "Ingenieros en el equipo que fundé",
 
     "about.h": "Ingeniero de oficio,<br/>investigador por trayectoria.",
@@ -100,7 +100,7 @@ const I18N = {
 
     "k.compml": "ML COMPETITIVO",
     "comp.h": "El historial en competencias",
-    "comp.lede": "La competencia es mi función forzante favorita: una métrica congelada, una fecha límite dura y ningún crédito parcial por buenas intenciones. Veinticinco disputadas, seis activas ahora mismo.",
+    "comp.lede": "La competencia es mi función forzante favorita: una métrica congelada, una fecha límite dura y ningún crédito parcial por buenas intenciones. Veintisiete disputadas, siete activas ahora mismo.",
     "comp.provenance": "<strong>Lee esto antes que los números.</strong> Ambas medallas salieron de notebooks públicos que ejecuté, no de métodos que inventé: la plata fue una copia literal, similitud 1.000. Las 19 competencias terminadas están clasificadas en un <a href=\"https://github.com/ElMatiOfficial/kaggle-solutions/blob/main/PROVENANCE.md\" target=\"_blank\" rel=\"noopener\">registro público de procedencia</a>: 5 sustancialmente originales, 5 derivadas, 6 copias literales, 3 de compañeros de equipo, con cada autor original nombrado. Se construyó comparando mis envíos finales contra los notebooks de los que vinieron.",
     "board.comp": "Competencia",
     "board.domain": "Dominio",
@@ -118,9 +118,9 @@ const I18N = {
     "methods.note": "Cada uno enlaza a un informe técnico completo. Toda competencia que termino recibe uno, con el método tal como fue enviado y el crédito a cualquier trabajo público sobre el que se construyó.",
 
     "comp.c1.h": "Competitions Expert <span>↗</span>",
-    "comp.c1.p": "Puesto <strong>1.095 de 210.960</strong> competidores en Kaggle, con una medalla de plata, una de bronce y ocho finales en el top 20%. Veinticinco competencias disputadas en pistas tabulares, de visión, NLP, audio, optimización y simulación.",
-    "comp.c2.h": "Seis competencias activas",
-    "comp.c2.p": "Seguridad de agentes, seguimiento de células embrionarias, geonavegación de pozos, agentes de batalla de Pokémon TCG y tanto ARC-AGI-2 como ARC-AGI-3, cada una con documento de contexto, evaluador offline y registro de experimentos.",
+    "comp.c1.p": "Puesto <strong>1.094 de 209.674</strong> competidores en Kaggle, con una medalla de plata, dos de bronce y nueve finales en el top 20%. Veintisiete competencias disputadas en pistas tabulares, de visión, NLP, audio, optimización y simulación.",
+    "comp.c2.h": "Siete competencias activas",
+    "comp.c2.p": "Seguridad de agentes, seguimiento de células embrionarias, agentes de batalla de Pokémon TCG, detección de anomalías de rodilla, el reto Kaggriculture y tanto ARC-AGI-2 como ARC-AGI-3, cada una con documento de contexto, evaluador offline y registro de experimentos.",
     "comp.c3.h": "Baubap AI Hackathon · 1er lugar",
     "comp.c3.p": "Gané la categoría de redes neuronales del hackathon internacional de la fintech mexicana en CDMX: detección de fraude sobre más de mil variables tabulares con más de 90% de precisión.",
     "comp.c4.h": "Escritura <span>↗</span>",
@@ -154,7 +154,8 @@ const I18N = {
     "t.prompt": "ingeniería de prompts", "t.drift": "detección de drift", "t.etl": "diseño ETL / ELT",
     "t.pyexp": "Python (experto)", "t.sqlexp": "SQL (experto)",
     "t.foundation": "modelos fundacionales", "t.credit": "riesgo crediticio",
-    "tag.silver": "1 plata", "tag.bronze": "1 bronce", "tag.top05": "top 0,5%",
+    "tag.silver": "1 plata", "tag.bronze": "2 bronces", "tag.top05": "top 0,5%",
+    "t.geosteer": "geonavegación",
     "tag.active": "activas ahora", "tag.research": "nivel investigación", "tag.trilingual": "ES · EN · PT"
   },
 
@@ -166,7 +167,7 @@ const I18N = {
     "nav.contact": "Contato",
 
     "hero.tagline": 'Eu <span class="accent">construo</span> e <span class="warm">quebro</span> sistemas inteligentes.',
-    "hero.body": "Engenheiro de ML com <strong>mais de 8 anos</strong> levando IA para produção, atualmente Senior AI/ML Engineer na <strong>Nequi (Grupo Bancolombia)</strong>, onde pré-treino modelos fundacionais sobre sequências transacionais de clientes. Fora do expediente, meu centro de gravidade é a pesquisa: <strong>segurança de agentes e red teaming</strong>, <strong>avaliação de LLMs</strong> e <strong>raciocínio matemático</strong>, quase tudo em aberto por meio de ML competitivo. Kaggle Competitions Expert, posição <strong>1.095 de 210.960</strong>.",
+    "hero.body": "Engenheiro de ML com <strong>mais de 8 anos</strong> levando IA para produção, atualmente Senior AI/ML Engineer na <strong>Nequi (Grupo Bancolombia)</strong>, onde pré-treino modelos fundacionais sobre sequências transacionais de clientes. Fora do expediente, meu centro de gravidade é a pesquisa: <strong>segurança de agentes e red teaming</strong>, <strong>avaliação de LLMs</strong> e <strong>raciocínio matemático</strong>, quase tudo em aberto por meio de ML competitivo. Kaggle Competitions Expert, posição <strong>1.094 de 209.674</strong>.",
     "hero.cta1": "Ver minha pesquisa",
     "hero.cta2": "Carreira",
     "hero.cv": "Baixar CV",
@@ -195,8 +196,8 @@ const I18N = {
     "dg.caption": 'construir <span class="cap-teal">●</span> &nbsp;/&nbsp; quebrar <span class="cap-warm">●</span> · o ciclo em que trabalho',
 
     "stat.years": "Anos levando ML para produção",
-    "stat.rank": "Posição global no Kaggle, de 210.960",
-    "stat.comps": "Competições · 2 medalhas · 6 ativas agora",
+    "stat.rank": "Posição global no Kaggle, de 209.674",
+    "stat.comps": "Competições · 3 medalhas · 7 ativas agora",
     "stat.team": "Engenheiros na equipe que fundei",
 
     "about.h": "Engenheiro de ofício,<br/>pesquisador por trajetória.",
@@ -257,7 +258,7 @@ const I18N = {
 
     "k.compml": "ML COMPETITIVO",
     "comp.h": "O histórico em competições",
-    "comp.lede": "Competição é minha função forçante favorita: uma métrica congelada, um prazo rígido e nenhum crédito parcial por boas intenções. Vinte e cinco disputadas, seis ativas agora.",
+    "comp.lede": "Competição é minha função forçante favorita: uma métrica congelada, um prazo rígido e nenhum crédito parcial por boas intenções. Vinte e sete disputadas, sete ativas agora.",
     "comp.provenance": "<strong>Leia isto antes dos números.</strong> As duas medalhas vieram de notebooks públicos que executei, não de métodos que inventei: a prata foi uma cópia literal, similaridade 1.000. As 19 competições concluídas estão classificadas em um <a href=\"https://github.com/ElMatiOfficial/kaggle-solutions/blob/main/PROVENANCE.md\" target=\"_blank\" rel=\"noopener\">registro público de procedência</a>: 5 substancialmente originais, 5 derivadas, 6 cópias literais, 3 de colegas de equipe, com cada autor original nomeado. Foi construído comparando minhas submissões finais com os notebooks de onde vieram.",
     "board.comp": "Competição",
     "board.domain": "Domínio",
@@ -275,9 +276,9 @@ const I18N = {
     "methods.note": "Cada um leva a um relatório técnico completo. Toda competição que concluo recebe um, com o método tal como foi submetido e crédito a qualquer trabalho público em que se apoiou.",
 
     "comp.c1.h": "Competitions Expert <span>↗</span>",
-    "comp.c1.p": "Posição <strong>1.095 de 210.960</strong> competidores do Kaggle, com uma medalha de prata, uma de bronze e oito resultados no top 20%. Vinte e cinco competições disputadas em trilhas tabulares, de visão, NLP, áudio, otimização e simulação.",
-    "comp.c2.h": "Seis competições ativas",
-    "comp.c2.p": "Segurança de agentes, rastreamento de células embrionárias, geonavegação de poços, agentes de batalha de Pokémon TCG e tanto ARC-AGI-2 quanto ARC-AGI-3, cada uma com documento de contexto, avaliador offline e registro de experimentos.",
+    "comp.c1.p": "Posição <strong>1.094 de 209.674</strong> competidores do Kaggle, com uma medalha de prata, duas de bronze e nove resultados no top 20%. Vinte e sete competições disputadas em trilhas tabulares, de visão, NLP, áudio, otimização e simulação.",
+    "comp.c2.h": "Sete competições ativas",
+    "comp.c2.p": "Segurança de agentes, rastreamento de células embrionárias, agentes de batalha de Pokémon TCG, detecção de anomalias de joelho, o desafio Kaggriculture e tanto ARC-AGI-2 quanto ARC-AGI-3, cada uma com documento de contexto, avaliador offline e registro de experimentos.",
     "comp.c3.h": "Baubap AI Hackathon · 1º lugar",
     "comp.c3.p": "Venci a categoria de redes neurais do hackathon internacional da fintech mexicana na Cidade do México: detecção de fraude sobre mais de mil variáveis tabulares com mais de 90% de acurácia.",
     "comp.c4.h": "Escrita <span>↗</span>",
@@ -311,7 +312,8 @@ const I18N = {
     "t.prompt": "engenharia de prompts", "t.drift": "detecção de drift", "t.etl": "desenho ETL / ELT",
     "t.pyexp": "Python (especialista)", "t.sqlexp": "SQL (especialista)",
     "t.foundation": "modelos fundacionais", "t.credit": "risco de crédito",
-    "tag.silver": "1 prata", "tag.bronze": "1 bronze", "tag.top05": "top 0,5%",
+    "tag.silver": "1 prata", "tag.bronze": "2 bronzes", "tag.top05": "top 0,5%",
+    "t.geosteer": "geonavegação",
     "tag.active": "ativas agora", "tag.research": "nível pesquisa", "tag.trilingual": "ES · EN · PT"
   }
 };
