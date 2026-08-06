@@ -353,6 +353,17 @@ a.m-name:hover { border-bottom-color: var(--accent); }
   font-size: 13.5px; color: var(--faint); max-width: 78ch;
 }
 
+/* Provenance caveat — deliberately sits above the leaderboard, not in a
+   separate section further down, so nobody meets the results first. */
+.board-note {
+  margin: -20px 0 28px; padding: 14px 18px; max-width: 78ch;
+  border-left: 3px solid var(--accent); background: var(--panel);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 13.5px; line-height: 1.6; color: var(--muted);
+}
+.board-note strong { color: var(--text); }
+.board-note a { color: var(--accent); border-bottom: 1px dashed currentColor; }
+
 /* projects */
 .proj-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
 .p-card {
