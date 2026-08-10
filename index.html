@@ -253,15 +253,14 @@
       <h3 data-i18n="res.c3.h">Single-primitive math for AI: the EML operator</h3>
       <p data-i18n="res.c3.p">
         Independent Python implementation of Odrzywołek's exp-minus-log primitive, the NAND gate of
-        continuous mathematics, released as the <code>eml-translator</code> library. On top of it, an agent
-        research POC: a 21-problem benchmark (100% solved), seven EML tools exposed via Claude's tool-use
-        API, and an 8-subagent A/B investigation of four Riemann-Hypothesis-equivalent criteria. The POC
-        also reports where the tools <em>don't</em> pay: on calculus and algebra the agents route around
-        EML to sympy.
+        continuous mathematics, released as the <code>eml-translator</code> library. I then exposed seven
+        EML operations to Claude as tool-use and benchmarked whether they make an agent better at
+        mathematics. The answer was mostly <em>no</em>, and the library says so: on calculus and algebra
+        the agents route around EML to sympy, because multiplication alone is K=41 and π is K=193. It
+        earns its keep on translate, evaluate, and verify.
       </p>
       <div class="r-tags"><span data-i18n="t.symbolic">symbolic math</span><span data-i18n="t.toolagents">tool-use agents</span><span data-i18n="t.bench">benchmarks</span></div>
       <a class="r-link" href="https://github.com/ElMatiOfficial/EML-Mathematical-Translator-for-AI" target="_blank" rel="noopener" data-i18n="link.lib">Library ↗</a>
-      <a class="r-link" href="https://github.com/ElMatiOfficial/EML-Research-POC" target="_blank" rel="noopener" data-i18n="link.repo">Research repo ↗</a>
     </article>
 
     <article class="r-card reveal">
