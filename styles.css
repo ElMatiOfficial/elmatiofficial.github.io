@@ -413,6 +413,114 @@ a.m-name:hover { border-bottom-color: var(--accent); }
   .reveal { opacity: 1; transform: none; transition: none; }
 }
 
+/* ============ motion choreography (all gated on no-preference) ============ */
+
+/* Plotter Draft: the hero diagram inks itself, then the pulses switch on */
+.diagram-svg.draw .wire {
+  stroke-dasharray: var(--len);
+  stroke-dashoffset: var(--len);
+}
+.diagram-svg.draw g.node, .diagram-svg.draw g.out,
+.diagram-svg.draw .col-label, .diagram-svg.draw g.pulses { opacity: 0; }
+.diagram-svg.draw g.node { transform: scale(.94); transform-box: fill-box; transform-origin: center; }
+.diagram-svg.drawn .wire { stroke-dashoffset: 0; transition: stroke-dashoffset .5s ease; }
+.diagram-svg.drawn #w1, .diagram-svg.drawn #w2 { transition-delay: .15s; }
+.diagram-svg.drawn #w3, .diagram-svg.drawn #w4,
+.diagram-svg.drawn #w5, .diagram-svg.drawn #w6 { transition-delay: .55s; }
+.diagram-svg.drawn #w7, .diagram-svg.drawn #w8,
+.diagram-svg.drawn #w9, .diagram-svg.drawn #w10 { transition-delay: .95s; }
+.diagram-svg.drawn .col-label { opacity: 1; transition: opacity .4s ease; }
+.diagram-svg.drawn g.node {
+  opacity: 1; transform: scale(1);
+  transition: opacity .45s ease, transform .45s ease;
+}
+.diagram-svg.drawn g.node:nth-of-type(1), .diagram-svg.drawn g.node:nth-of-type(2) { transition-delay: .1s; }
+.diagram-svg.drawn g.node:nth-of-type(3) { transition-delay: .5s; }
+.diagram-svg.drawn g.node:nth-of-type(4) { transition-delay: .85s; }
+.diagram-svg.drawn g.node:nth-of-type(5) { transition-delay: .93s; }
+.diagram-svg.drawn g.node:nth-of-type(6) { transition-delay: 1.01s; }
+.diagram-svg.drawn g.node:nth-of-type(7) { transition-delay: 1.09s; }
+.diagram-svg.drawn g.out { opacity: 1; transition: opacity .4s ease; }
+.diagram-svg.drawn g.out:nth-of-type(8) { transition-delay: 1.25s; }
+.diagram-svg.drawn g.out:nth-of-type(9) { transition-delay: 1.32s; }
+.diagram-svg.drawn g.out:nth-of-type(10) { transition-delay: 1.39s; }
+.diagram-svg.drawn g.out:nth-of-type(11) { transition-delay: 1.46s; }
+.diagram-svg.drawn g.pulses { opacity: 1; transition: opacity .6s ease 1.6s; }
+
+/* Convergence counters: shrinking ± interval beside each stat */
+.stat-ci {
+  font-family: var(--mono); font-size: 13px; color: var(--faint);
+  margin-left: 7px; transition: opacity .45s ease;
+}
+.stat-ci.gone { opacity: 0; }
+
+/* Percentile split-flap on board results */
+.b-res .flip { position: relative; display: block; overflow: hidden; }
+.b-res .flip-a { display: block; transition: transform .28s ease; }
+.b-res .flip-b {
+  position: absolute; inset: 0; transform: translateY(130%);
+  transition: transform .28s ease; text-align: right; color: var(--accent);
+  -webkit-user-select: none; user-select: none;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .board-row:hover .flip-a, .board-row:focus-visible .flip-a { transform: translateY(-130%); }
+  .board-row:hover .flip-b, .board-row:focus-visible .flip-b { transform: translateY(0); }
+}
+
+/* Career ledger: rule inks down as you read; dots stamp; one gold milestone */
+.timeline::before {
+  content: ""; position: absolute; top: 0; left: -1px; width: 2px; height: 100%;
+  background: var(--accent);
+  transform: scaleY(0); transform-origin: top;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .timeline::before { transform: scaleY(var(--tl-progress, 0)); }
+}
+.timeline { position: relative; }
+.t-milestone {
+  display: block; font-family: var(--mono); font-size: 11.5px;
+  color: var(--gold); margin-top: 6px; letter-spacing: .04em;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .t-item.reveal::before { transform: scale(0); }
+  .t-item.reveal.on::before { animation: dot-stamp .4s ease .15s both; }
+  .t-item .t-milestone { opacity: 0; }
+  .t-item.on .t-milestone { animation: milestone-in .7s ease .55s both; }
+}
+@keyframes dot-stamp {
+  from { transform: scale(1.9); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+@keyframes milestone-in {
+  from { opacity: 0; transform: translateY(4px) scale(.92); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Build/break rule: the underline under "build" holds; the one under "break" fractures */
+.hero-tagline .accent, .hero-tagline .warm { position: relative; display: inline-block; }
+.hero-tagline .accent::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: -4px; height: 2px;
+  background: var(--accent);
+}
+.hero-tagline .warm::before, .hero-tagline .warm::after {
+  content: ""; position: absolute; bottom: -4px; height: 2px; background: var(--warm);
+}
+.hero-tagline .warm::before { left: 0; right: 54%; transform: translateY(2px) rotate(-2.5deg); }
+.hero-tagline .warm::after { left: 54%; right: 0; transform: translate(2px, -2px) rotate(2.5deg); }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-tagline .accent::after { animation: rule-draw .5s ease .9s both; transform-origin: left; }
+  .hero-tagline .warm::before { animation: rule-draw-l .3s ease 1.5s both, rule-crack-l .18s ease 2.1s forwards; transform-origin: left; }
+  .hero-tagline .warm::after { animation: rule-draw-r .3s ease 1.8s both, rule-crack-r .18s ease 2.1s forwards; transform-origin: left; }
+  .hero-tagline.ruled .accent::after,
+  .hero-tagline.ruled .warm::before,
+  .hero-tagline.ruled .warm::after { animation: none; }
+}
+@keyframes rule-draw { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes rule-draw-l { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes rule-draw-r { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes rule-crack-l { from { transform: scaleX(1); } to { transform: scaleX(1) translateY(2px) rotate(-2.5deg); } }
+@keyframes rule-crack-r { from { transform: scaleX(1); } to { transform: scaleX(1) translate(2px, -2px) rotate(2.5deg); } }
+
 /* ============ responsive ============ */
 @media (max-width: 960px) {
   .hero-inner, .about-grid { grid-template-columns: 1fr; }
